@@ -15,8 +15,9 @@ body{
 }
 
 .title-app{
-    color: #fff;
+    color: #666;
     text-align: center;
+    font-weight: 600;
 }
 
 .agregar{
@@ -110,7 +111,8 @@ li{
 }
 
 footer{
-    color: #fff;
+    color: #666;
+    font-weight: 400;
     text-align: center;
     font-size: 13px;
     padding-top: 20px;
