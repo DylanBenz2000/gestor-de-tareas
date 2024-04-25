@@ -16,7 +16,7 @@ Esta es una aplicación web simple de lista de tareas (To-Do) donde puedes agreg
 ## Capturas de Pantalla
 
 ## Demo
-Puedes ver una demostración de la aplicación [aquí](link_a_demo).
+Puedes ver una demostración de la aplicación [aquí](https://dylanbenz2000.github.io/gestor-de-tareas/).
 
 ## Instalación y Uso
 1. Clona este repositorio en tu máquina local.
@@ -27,4 +27,4 @@ Puedes ver una demostración de la aplicación [aquí](link_a_demo).
 Las contribuciones son bienvenidas. Si tienes sugerencias de mejora, por favor crea un pull request o abre un issue.
 
 ## Autor
-Dylan Benítez - [GitHub](link_a_perfil)
+Dylan Benítez - [GitHub](https://github.com/DylanBenz2000)
