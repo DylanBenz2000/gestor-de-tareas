@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #0D0714;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.title-app{
+    color: #fff;
+    text-align: center;
+}
+
+.agregar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #9E78CF;
+    color: #fff;
+    font-size: 25px;
+}
+
+.container-todo{
+    width: 100%;
+    /* border: 4px solid red; */
+
+}
+
+.new-task{
+    /* border: 2px solid #3E1671; */
+    border-radius: 4px;
+    width: 500px;
+    margin-bottom: 15px;
+    
+}
+
+input{
+    background-color: transparent;
+    border: 1px solid #3E1671;
+    border-radius: 3px;
+    outline: none;
+    color: #777777;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    margin-left: 15px;
+}
+
+.task-list{
+    /* border: 3px solid yellow; */
+    width: 500px;
+}
+
+.title{
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.list-container{
+    /* border: 3px solid green; */
+    width: 450px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+
+    width: 440px;
+    border-radius: 5px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+.label-style{
+    color: #9E78CF;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+.label-style-done{
+    color: #78CFB0;
+    padding-left: 12px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.fa-check,.fa-trash{
+    color: #9E78CF;
+    cursor: pointer;
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

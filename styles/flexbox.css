@@ -1,0 +1,114 @@
+
+.container-todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 3px solid red; */
+}
+
+.new-task{
+    display: flex;
+    /* border: 3px solid yellow; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.new-task-input-button{
+    width: 485px;
+    /* border: 3px solid salmon; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.container-title{
+    display: flex;
+    /* border: 3px solid salmon; */
+    width: 450px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid blue; */
+}
+
+.list-container{
+    /* border: 3px solid orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li{
+    background-color: #15101C;
+    display: flex;
+    gap: 300px;
+    /* border: 3px solid lightblue; */
+}
+
+.icons{
+    display: flex;
+    gap: 45px;
+}
+
+
+
+.task-list-done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Tabletas */
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+
+}
+
+/* Móvil */
+
+@media screen and (max-width: 800px) {
+    .container-todo{
+        margin-top: 0;
+    }
+
+    .new-task{
+        border-radius: 4px;
+        width: 350px;
+        margin-bottom: 15px;
+    }
+    .new-task-input-button{
+        width: 320px;
+    }
+    input{
+        margin-left: 5px;
+    }
+    .agregar{
+        width: 30px;
+        height: 35px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .task-list{
+        width: 350px;
+    }
+    .list-container{
+        width: 320px;
+    }
+    .container-title{
+        width: 320px;
+    }
+    li{
+        width: 310px;
+        gap: 160px;
+    }
+}
