@@ -12,6 +12,8 @@ Esta es una aplicación web simple de lista de tareas (To-Do) donde puedes agreg
 - HTML5
 - CSS3 (incluyendo Flexbox)
 - JavaScript (DOM Manipulation)
+- Font Awesome para iconos
+- Google Fonts para fuentes
 
 ## Capturas de Pantalla
 
