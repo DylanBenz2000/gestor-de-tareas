@@ -57,6 +57,11 @@ body.active .fa-check {
     color: #4CAF50;
 }
 
+body.active .task-list-done .label-style{
+    color: #3498db;
+
+}
+
 .switch{
     width: 60px;
     height: 30px;
@@ -72,7 +77,8 @@ body.active .fa-check {
 .switch .fa-sun, .fa-moon{
     font-size: 17px;
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 23px;
+    margin-left: -20px;
 }
 
 .fa-sun, .fa-moon{
@@ -175,8 +181,13 @@ input[type="text"]:focus{
 }
 
 .task-list{
-    /* border: 3px solid yellow; */
     width: 500px;
+}
+
+.container-text{
+    margin-left: 10px;
+    /* border: 3px solid red; */
+    width: 350px;
 }
 
 .title{
@@ -193,35 +204,34 @@ input[type="text"]:focus{
 }
 
 .task{
-
+    /* border: 3px solid yellow; */
     width: 440px;
     border-radius: 5px;
     padding-top: 17px;
     padding-bottom: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
-
+ 
 .label-style{
     color: #9E78CF;
-    padding-left: 12px;
     font-size: 14px;
     transition: color 0.3s ease;
-}
+    /* border: 3px solid blue; */
+} 
 
 .label-style:hover{
     color: #FFF;
 }
 
 
-.label-style-done{
+/* .label-style-done{
     color: #78CFB0;
     padding-left: 12px;
     font-size: 14px;
     text-decoration: line-through;
-}
+} */
 
 .fa-check,.fa-trash{
     color: #9E78CF;
@@ -231,6 +241,12 @@ input[type="text"]:focus{
 
 .fa-check:hover,.fa-trash:hover{
     transform: scale(1.2);
+}
+
+.task-done {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateX(200%);
+    opacity: 0;
 }
 
 footer{
