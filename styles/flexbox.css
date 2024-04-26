@@ -171,4 +171,7 @@ li:hover{
         align-items: center;
         width: 100px;
     }
+    footer{
+        margin-top: auto;
+    }
 }
