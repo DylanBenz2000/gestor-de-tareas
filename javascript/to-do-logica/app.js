@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', () =>{
     const inputItem = document.querySelector('#taskInput');
     const listaPendientes = document.querySelector('.task-list .list-container');
     const listaCompletadas = document.querySelector('.task-list-done .list-container');
+    const titlePendientes = document.querySelector('.task-list .container-title .title span');
+    const titleCompletadas = document.querySelector('.task-list-done .container-title .title span');
 
     cargarTareas();
+    actualizarTitulos();
 
     buttonAgregar.addEventListener('click', () =>{
         const valorInput = inputItem.value.trim();
@@ -13,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             listaPendientes.appendChild(nuevoItem);
             guardarTareaPendiente(valorInput);
             inputItem.value = '';
+            actualizarTitulos();
         }
     });
 
@@ -75,11 +79,13 @@ document.addEventListener('DOMContentLoaded', () =>{
         const nuevoItem = crearTareaCompletada(texto);
         listaCompletadas.appendChild(nuevoItem);
         guardarTareaCompletada(texto);
+        actualizarTitulos();
     }
 
     function eliminarTarea(item, texto) {
         listaPendientes.removeChild(item);
         eliminarTareaPendiente(texto);
+        actualizarTitulos();
     }
 
     function guardarTareaPendiente(tarea) {
@@ -107,6 +113,14 @@ document.addEventListener('DOMContentLoaded', () =>{
         let tareasPendientes = JSON.parse(localStorage.getItem('tareasPendientes')) || [];
         tareasPendientes = tareasPendientes.filter(item => item !== tarea);
         localStorage.setItem('tareasPendientes', JSON.stringify(tareasPendientes));
+    }
+
+        function actualizarTitulos() {
+        const numTareasPendientes = listaPendientes.children.length;
+        const numTareasCompletadas = listaCompletadas.children.length;
+
+        titlePendientes.textContent = numTareasPendientes;
+        titleCompletadas.textContent = numTareasCompletadas;
     }
 
 });
