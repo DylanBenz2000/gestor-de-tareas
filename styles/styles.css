@@ -260,3 +260,39 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* @keyframes fadeOut{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+
+.task-list .list-container .task{
+    animation: fadeInDown 0.9s ease forwards;
+}
+
+.animated-list {
+    animation: fadeInDown 0.9s ease forwards;
+}
+
+
+/* .animated-task{
+    animation: fadeOut 0.9s ease forwards;
+} */
+

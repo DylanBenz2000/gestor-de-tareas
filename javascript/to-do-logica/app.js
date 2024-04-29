@@ -77,9 +77,12 @@ document.addEventListener('DOMContentLoaded', () =>{
     function marcarComoHecho(item, texto) {
         listaPendientes.removeChild(item);
         const nuevoItem = crearTareaCompletada(texto);
+        // nuevoItem.classList.add('animated-task');
         listaCompletadas.appendChild(nuevoItem);
+        listaCompletadas.classList.add('animated-list');
         guardarTareaCompletada(texto);
         actualizarTitulos();
+        
     }
 
     function eliminarTarea(item, texto) {
